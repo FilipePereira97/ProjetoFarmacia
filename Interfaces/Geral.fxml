@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="635.0" prefWidth="928.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1"  fx:controller="Controller">
+   <children>
+      <Button layoutX="483.0" layoutY="484.0" mnemonicParsing="false" onAction="#openCalc" prefHeight="45.0" prefWidth="136.0" text="Calculadora" />
+      <Button layoutX="700.0" layoutY="484.0" mnemonicParsing="false" prefHeight="45.0" prefWidth="129.0" text="Finalizar" />
+      <TextField fx:id="multiBanco" alignment="CENTER" layoutX="128.0" layoutY="171.0" promptText="MultiBanco" />
+      <TextField fx:id="cash" alignment="CENTER" layoutX="128.0" layoutY="278.0" promptText="Dinheiro" />
+      <TextField fx:id="others" alignment="CENTER" layoutX="128.0" layoutY="372.0" promptText="Outros" />
+      <TextField fx:id="totalPrev" alignment="CENTER" layoutX="577.0" layoutY="171.0" promptText="Total Previsto" />
+      <TextField fx:id="totalObt" alignment="CENTER" layoutX="577.0" layoutY="272.0" promptText="Total Obtido" />
+      <TextField fx:id="desv" alignment="CENTER" layoutX="577.0" layoutY="372.0" promptText="Desvio" />
+      <Label alignment="CENTER" contentDisplay="CENTER" layoutX="285.0" layoutY="45.0" prefHeight="58.0" prefWidth="359.0" text="zjshxnfdvk acbjnhb" textOverrun="CENTER_WORD_ELLIPSIS" />
+   </children>
+</AnchorPane>
