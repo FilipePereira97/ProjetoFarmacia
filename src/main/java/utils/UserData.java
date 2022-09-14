@@ -1,3 +1,7 @@
+package utils;
+
+import java.util.Objects;
+
 public class UserData {
     private String userName;
     private String password;
@@ -29,4 +33,13 @@ public class UserData {
                 userName + "/" +
                 password;
     }
+
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+        UserData userData = (UserData) o;
+        return Objects.equals(userName, userData.userName) && Objects.equals(password, userData.password);
+    }
+
 }

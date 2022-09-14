@@ -1,3 +1,7 @@
+package utils;
+
+import controller.Controller;
+
 public class Calculos {
 
     public static double totalObtido(){

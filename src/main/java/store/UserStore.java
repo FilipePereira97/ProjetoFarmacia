@@ -1,22 +1,26 @@
+package store;
+
+import utils.UserData;
+
 import java.io.*;
 import java.util.ArrayList;
 import java.util.List;
-import java.util.Scanner;
+
 
 public class UserStore {
-    private List<UserData> ListUserData = new ArrayList<>();
+    private static List<UserData> ListUserData = new ArrayList<>();
     private static final String fileUserData = "fileUserData.bin";
     private UserData newUserData;
 
     public void fillArrayAllUsers(String userName, String userPassword){
 
-        new UserData("João", "OlaOla");
-        new UserData("Ana", "ByeBye");
-        new UserData("qwert", "123123");
+        ListUserData.add(new UserData("João", "OlaOla"));
+        ListUserData.add(new UserData("Ana", "ByeBye"));
+        ListUserData.add(new UserData("21", "filipe"));
 
         newUserData = new UserData(userName, userPassword);
         ListUserData.add(newUserData);
-        saveArrayUserFile(ListUserData);
+        //saveArrayUserFile(ListUserData);
     }
 
 
@@ -48,5 +52,13 @@ public class UserStore {
         }catch (IOException | ClassNotFoundException e){
             return new UserStore();
         }
+    }
+
+    public static List<UserData> getListUserData() {
+        return ListUserData;
+    }
+
+    public static boolean checkIfUserExists(UserData user){
+        return UserStore.getListUserData().contains(user);
     }
 }
